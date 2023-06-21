@@ -1,16 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.51bdbf96.js",
+    "main.css": "/static/css/main.eb341550.css",
+    "main.js": "/static/js/main.d6874194.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/bookoze1.png": "/static/media/bookoze1.5ecf203792f9639a3079.png",
+    "static/media/tripwiser.png": "/static/media/tripwiser.51c1dc9c22f5c05e1730.png",
+    "static/media/telepharm.png": "/static/media/telepharm.08b234820e9aa1a178ea.png",
+    "static/media/pharmeasy.png": "/static/media/pharmeasy.f5e6bad9d6a58d1d963a.png",
+    "static/media/uimage-fotor-bg-remover-202306042118.png": "/static/media/uimage-fotor-bg-remover-202306042118.b5bd6ff8f45c3067cd2b.png",
+    "static/media/pic-20230604232424.png": "/static/media/pic-20230604232424.57d29da06503daca11ac.png",
+    "static/media/tradehub.png": "/static/media/tradehub.a0644d2401a6cd1982ab.png",
+    "static/media/K8DN7t.jpg": "/static/media/K8DN7t.fd70978295d43d5a6a37.jpg",
+    "static/media/inline_image_preview.avif": "/static/media/inline_image_preview.989354feb73a2f185a87.avif",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.51bdbf96.js.map": "/static/js/main.51bdbf96.js.map",
+    "main.eb341550.css.map": "/static/css/main.eb341550.css.map",
+    "main.d6874194.js.map": "/static/js/main.d6874194.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.51bdbf96.js"
+    "static/css/main.eb341550.css",
+    "static/js/main.d6874194.js"
   ]
 }
