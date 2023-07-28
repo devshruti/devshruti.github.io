@@ -24,7 +24,6 @@ export const Home = () => {
           <p>I'm from  <span style={{ color: "#3dff08" }}>Bhopal, India</span>. 
           I'm a graduate in engineering with a specialization in <span style={{ color: "#3dff08" }}>electronics and communication</span> from SIRT, Bhopal. 
           Currently, I am a student at <span style={{ color: "#3dff08" }}>Masai School</span>, where I continue to refine my coding abilities through immersive hands-on projects.</p>
-          <p>Beyond my love for technology, I find immense fulfillment in <span style={{ color: "#3dff08" }}>cooking</span> and <span style={{ color: "#3dff08" }}>teaching</span>.</p>
           </div>
           
           <div className="typewriter">
@@ -86,26 +85,31 @@ const DIV = styled.div`
     font-size: 24px;
     font-weight: 500;
     border-radius: 10px;
-    box-shadow: 4px 5px 4px 3px #a3eb90
+    box-shadow: 4px 5px 4px 3px #a3eb90;
+    animation-name: button;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
   }
-  #resume-link-2:hover{
-    
-  }
+  @keyframes button {
+  from {box-shadow: 4px 5px 4px 3px #a3eb90;background-color: #4c4f4b;}
+  to {box-shadow: 4px 5px 4px 3px #37f403;background-color: black;}
+}
     .content{ 
       width: 60%;
         margin-top: 10%;
         margin-left: 15%;
         text-align: left;
     }
+    
     .content h1{
-      font-size: 3rem;
+      font-size: 2.8rem;
     }
     .typewriter{
         color: #3dff08;
         margin-top: 5%;
         margin-bottom: 2%;
         text-align: "left";
-        font-size: 2.5rem;
+        font-size: 2.4rem;
     }
     .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
@@ -136,11 +140,25 @@ img{
   margin-top: 12%;
   margin-left: -12%;
 }
-.introImg img{
+/* .introImg img{
   width: 70%;
   border: 1px solid #010101;
   border-radius: 35%;
   background-color: #8afd6b;
+} */
+.home-img{
+  width: 70%;
+  border: 1px solid #010101;
+  border-radius: 35%;
+  position: relative;
+  background-color: #8afd6b;
+  animation-name: pic;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+  @keyframes pic {
+ from {background-color: #8afd6b; left:100px; top:0px;}
+  to  {background-color: #8afd6b; left:0px; top:0px;}
 }
 .introduction{
   width: 80%;

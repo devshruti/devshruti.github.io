@@ -8,70 +8,77 @@ import GitHubCalendar from "react-github-calendar";
 
 export const About = () => {
 
-    return (
-     <DIV id="about" className="about section">
-        <div className="section">
-          <h1 className="me">About</h1>
-         <div className="about-me">
+  return (
+    <DIV id="about" className="about section">
+      <div className="section">
+        <h1 className="me">About</h1>
+        <div className="about-me">
           <div className="intro-text">
-         <p id="user-detail-name">Hello! I' m <span style={{color:"#3dff08"}}>Devshruti Sen</span></p>
-         <br />
-          <p id="user-detail-intro">I'm an aspiring <span style={{color:"#3dff08"}}> MERN</span> (<span style={{color:"#3dff08"}}>MongoDB, Express.js, React.js, Node.js</span>)
-             developer with a strong  interest in web development. </p>
-             <br />
-             {/* <p> I have invested significant time and effort into learning the MERN stack and honing my skills. I have completed several personal projects, including building interactive web applications and exploring different aspects of the MERN ecosystem.</p>
+            <p id="user-detail-name">Hello! I' m <span style={{ color: "#3dff08" }}>Devshruti Sen</span></p>
+            <br />
+            <p id="user-detail-intro">I'm an aspiring <span style={{ color: "#3dff08" }}> MERN</span> (<span style={{ color: "#3dff08" }}>MongoDB, Express.js, React.js, Node.js</span>)
+              developer with a strong  interest in web development. </p>
+            <br />
+            {/* <p> I have invested significant time and effort into learning the MERN stack and honing my skills. I have completed several personal projects, including building interactive web applications and exploring different aspects of the MERN ecosystem.</p>
              <br />  */}
-<p>I am proficient in front-end technologies such as <span style={{color:"#3dff08"}}> HTML, CSS, and JavaScript</span>. I have worked extensively with <span style={{color:"#3dff08"}}>React.js</span> and have gained experience in building responsive and user-friendly interfaces.</p> 
-<br />
-<p> On the back-end, I have worked with <span style={{color:"#3dff08"}}>Node.js</span> and <span style={{color:"#3dff08"}}>Express.js</span>, learning how to develop RESTful APIs and handle server-side logic.</p>
-          <br />
-          <p>Quick learner, detail-oriented, and eager to grow in the field.</p> <p> Let's connect and build something incredible together!</p>
+            <p>I am proficient in front-end technologies such as <span style={{ color: "#3dff08" }}> HTML, CSS, and JavaScript</span>. I have worked extensively with <span style={{ color: "#3dff08" }}>React.js</span> and have gained experience in building responsive and user-friendly interfaces.</p>
+            <br />
+            <p> On the back-end, I have worked with <span style={{ color: "#3dff08" }}>Node.js</span> and <span style={{ color: "#3dff08" }}>Express.js</span>, learning how to develop RESTful APIs and handle server-side logic.</p>
+            <br />
+            <p>Quick learner, detail-oriented, and eager to grow in the field.</p> <p> Let's connect and build something incredible together!</p>
           </div>
           <div className="stage-cube-cont">
-          <div className="cubespinner">
-            <div className="face1">
-            <TbBrandRedux style={{margin:"auto"}} size={75}  color= "#3dff08" />
-            </div>
-            <div className="face2">
-              <TbBrandJavascript  style={{margin:"auto"}} size={75} color= "#3dff08" />
-            </div>
-            <div className="face3">
-              <DiVisualstudio style={{margin:"auto"}} size={75} color= "#3dff08" />
-            </div>
-            <div className="face4">
-              <DiNodejsSmall style={{margin:"auto"}} size={75}  color= "#3dff08" />
-            </div>
-            <div className="face5">
-              <SiReact style={{margin:"auto"}} size={75}  color= "#3dff08" />
-            </div>
-            <div className="face6">
-              <SiNetlify style={{margin:"auto"}} size={75}  color= "#3dff08" />
+            <div className="cubespinner">
+              <div className="face1">
+                <TbBrandRedux style={{ margin: "auto" }} size={75} color="#3dff08" />
+              </div>
+              <div className="face2">
+                <TbBrandJavascript style={{ margin: "auto" }} size={75} color="#3dff08" />
+              </div>
+              <div className="face3">
+                <DiVisualstudio style={{ margin: "auto" }} size={75} color="#3dff08" />
+              </div>
+              <div className="face4">
+                <DiNodejsSmall style={{ margin: "auto" }} size={75} color="#3dff08" />
+              </div>
+              <div className="face5">
+                <SiReact style={{ margin: "auto" }} size={75} color="#3dff08" />
+              </div>
+              <div className="face6">
+                <SiNetlify style={{ margin: "auto" }} size={75} color="#3dff08" />
+              </div>
             </div>
           </div>
         </div>
-           </div>
-           <div className="git-activity">
-            <h1 >Github <span style={{color: "#3dff08"}}>Calender</span> </h1>
+        <div className="git-activity">
+          <h1 >Github <span style={{ color: "#3dff08" }}>Calender</span> </h1>
           {/* <img className="code" src={codeImg} alt="workCode" /> */}
           <div className="activity"
-          style={{ width:["330px", "450px", "870px"],
-          margin:"auto",
-          marginBottom:"30px"}}>
+            style={{
+              width: ["330px", "450px", "870px"],
+              margin: "auto",
+              marginBottom: "30px",
+              padding: "1%"
+            }}>
             <GitHubCalendar
-            username="devshruti"
-            className="react-activity-calendar"
-          />
+              style={{
+                padding: "1%",
+                border: "1px solid #94f65f",
+              }}
+              username="devshruti"
+              className="react-activity-calendar"
+            />
           </div>
-          
-          </div>
-          <div className="git-stats">
-          <img id="github-streak-stats" style={{border:"2px solid #3dff08", borderRadius:"5px"}} src="https://github-readme-streak-stats.herokuapp.com?user=devshruti&theme=github-dark" />
-          <img id="github-top-langs" style={{width:"470px"}} src="https://github-readme-stats.vercel.app/api/top-langs/?username=devshruti&layout=compact&theme=blue-green" />
-          <img id="github-stats-card" style={{border:"3px solid #3dff08", borderRadius:"5px"}} src="https://github-readme-stats.vercel.app/api?username=devshruti&show_icons=true&theme=blue-green" />
-         </div>
+
         </div>
-        </DIV>
-    )
+        <div className="git-stats">
+          <img id="github-streak-stats" style={{ border: "2px solid #3dff08", borderRadius: "5px" }} src="https://github-readme-streak-stats.herokuapp.com?user=devshruti&theme=github-dark" />
+          <img id="github-top-langs"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=devshruti&layout=compact&theme=blue-green" />
+          <img id="github-stats-card" style={{ border: "3px solid #3dff08", borderRadius: "5px" }} src="https://github-readme-stats.vercel.app/api?username=devshruti&show_icons=true&theme=blue-green" />
+        </div>
+      </div>
+    </DIV>
+  )
 }
 
 const DIV = styled.div`
@@ -89,7 +96,7 @@ const DIV = styled.div`
   margin:auto;
   text-align: center;
   font-size: 2.5rem;
-  color:#3dff08;
+  color:#fff;
 }
 .intro-text{
  width:60%;
@@ -120,13 +127,16 @@ const DIV = styled.div`
   img{
     width:100%;
   }
+  #github-top-langs{
+    width: 470px;
+  }
 
   .stage-cube-cont {
-  width: 50%;
+  width: 50%; 
   height: 100%;
   top: 120%;
   bottom: 100;
-  padding-top: 18%;
+  padding-top: 12%;
   margin-left: 0;
   position: absolute;
   right: 0;
@@ -259,6 +269,13 @@ p{
   width: 70%;
   margin: 20% 20%;
 }
+.git-stats img{
+  margin: 2%;
+  width: 330px;
+}
+#github-top-langs{
+    width: 360px;
+  }
 .cubespinner div {
   position: absolute;
     width: 100px;

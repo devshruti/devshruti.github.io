@@ -53,7 +53,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a className="nav-link projects" href="#projects">
+            <a className="nav-link projects" href="#projects" force="true">
               <AiOutlineFundProjectionScreen style={{ marginBottom: "-2px" }} /> Projects
             </a>
           </li>
@@ -78,19 +78,18 @@ const Navbar = () => {
               download="Devshruti-Sen-Resume.pdf"
             >
               <button
-                id="resume-button-1" style={{color:"#fff"}}>
-                <CgFileDocument style={{ marginBottom: "-2px" }} /> Resume
-             <span>
-              <AiOutlineDownload
-                style={{ marginBottom: "-2px" }}
-                fontSize={"1.5rem"}
-                color="white"
-              />
-            </span>
-             </button>
+                id="resume-button-1" style={{ color: "#fff" }}>Resume
+                <span>
+                  <AiOutlineDownload
+                    style={{ marginBottom: "-2px" }}
+                    fontSize={"1.5rem"}
+                    color="white"
+                  />
+                </span>
+              </button>
             </Link>
 
-            
+
           </li>
         </ul>
         <div className="hamburger" onClick={handleClick}>
@@ -132,22 +131,27 @@ const DIV = styled.div`
     padding: 0 1rem;
   }
   .nav-links li a{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
     
   }
+  /* #resume-link-1{
+margin-bottom: 5%;
+  } */
   #resume-button-1{
     cursor: pointer;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+margin-bottom: 5%;
     font-weight: 500;
     background-color: black;
     border: 2px #3dff08 solid;
-    width: 150px;
-    height: 35px;
+    width: 125px;
+    height: 32px;
     border-radius: 5px;
+    
   }
   #resume-button-1:hover{
-   background-color: #3dff08;
+   background-color: #87fc66;
     /* color: #88ed6c; */
     /* font-size: 1.6rem; */
   }
