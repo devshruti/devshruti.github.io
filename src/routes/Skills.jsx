@@ -136,8 +136,8 @@ margin-bottom: 15%;
   transition: all 0.4s ease 0s ;
   cursor: pointer;
  }
-  .skills-card>div:hover::after{
-   opacity: 1;
+  .skills-card>div:hover{
+   opacity: 0.5;
   }
 
   .skills-card>div:after{
@@ -167,6 +167,10 @@ margin-bottom: 15%;
   box-shadow: 4px 5px 4px 3px #a3eb90 ;
   overflow: hidden ;
   transition: all 0.4s ease 0s ;
+  cursor: pointer;
+  }
+  .tools-card>div:hover{
+   opacity: 0.5;
   }
   
   @media screen and (max-width: 670px){

@@ -11,6 +11,17 @@ export const Project = () => {
       <DIV id="projects">
       <h2 id="heading" >PROJECTS</h2>
         <div id="project">
+             <div className="project-card">
+            <img src={tradehub} alt="Project Image" />
+            <h1 className="project-title">Tradehub</h1>
+             <p className="project-description">Tradehub is a trading website. This web application allows users to sign up, log in, create a demat account, maintain a portfolio, and buy stocks.</p>
+             <p className="project-tech-stack">Tech Stack Used : <span style={{color:"#3dff08"}}>React, chakraUI, CSS, Javascript, Node.js, Express.js, MongoDB</span></p>
+           <br />
+            <a className="project-github-link" target="_blank" href="https://github.com/devshruti/TradeHub">GitHub</a>
+            <a className="project-deployed-link" target="_blank" href="https://tradehub.netlify.app/">Live</a>
+           <br />
+            <br />
+          </div>
           <div className="project-card">
             <img src={telephama} alt="Project Image" />
             <h1 className="project-title">TelePharmacy</h1>
@@ -22,17 +33,7 @@ export const Project = () => {
            <br />
             <br />
           </div>
-          <div className="project-card">
-            <img src={tradehub} alt="Project Image" />
-            <h1 className="project-title">Tradehub</h1>
-             <p className="project-description">Tradehub is a trading website. This web application allows users to sign up, log in, create a demat account, maintain a portfolio, and buy stocks.</p>
-             <p className="project-tech-stack">Tech Stack Used : <span style={{color:"#3dff08"}}>React, chakraUI, CSS, Javascript, Node.js, Express.js, MongoDB</span></p>
-           <br />
-            <a className="project-github-link" target="_blank" href="https://github.com/devshruti/TradeHub">GitHub</a>
-            <a className="project-deployed-link" target="_blank" href="https://tradehub.netlify.app/">Live</a>
-           <br />
-            <br />
-          </div>
+       
           <div className="project-card">
             <img src={bookoze} alt="Project Image" />
             <h1 className="project-title">Bookoze</h1>
@@ -51,7 +52,7 @@ export const Project = () => {
             <p className="project-tech-stack">Tech Stack Used : <span style={{color:"#3dff08"}}>React, chakraUI, CSS, Javascript</span></p>
             <br />
             <a className="project-github-link" target="_blank" href="https://github.com/devshruti/-boss-page-9475">GitHub</a>
-            <a className="project-deployed-link" target="_blank" href="https://6429ae19a6d9132112ddb61c--pharmacydev.netlify.app/">Live</a>
+            <a className="project-deployed-link" target="_blank" href="https://6502bafb39a8712d2b6c0daf--pharmaaacy.netlify.app/">Live</a>
            <br />
             <br />
           </div>
