@@ -21,29 +21,30 @@ export const Home = () => {
           </h1>
           <br />
           <div className="introduction">
-          <p>I'm from  <span style={{ color: "#3dff08" }}>Bhopal, India</span>. 
-          I'm a graduate in engineering with a specialization in <span style={{ color: "#3dff08" }}>electronics and communication</span> from SIRT, Bhopal. 
-          Currently, I am a student at <span style={{ color: "#3dff08" }}>Masai School</span>, where I continue to refine my coding abilities through immersive hands-on projects.</p>
+            <p>I'm from  <span style={{ color: "#3dff08" }}>Bhopal, India</span>.
+              I'm a graduate in engineering with a specialization in <span style={{ color: "#3dff08" }}>electronics and communication</span> from SIRT, Bhopal.
+              Currently, I am a student at <span style={{ color: "#3dff08" }}>Masai School</span>, where I continue to refine my coding abilities through immersive hands-on projects.</p>
           </div>
-          
+
           <div className="typewriter">
             <Type />
           </div>
           <br />
-          <Link
+          <a
             id="resume-link-2"
-            onClick={() =>
-              window.open(
-                "https://drive.google.com/file/d/1OvEn7SUFGb1epXVRuzKJpjfILJnfP_dA/view?usp=sharing"
-              )
-            }
-            target={"_blank"}
-            download="Devshruti-Sen-Resume.pdf"
+            href="https://drive.google.com/file/d/1mjTsav8nN4WUfsrndrxmKdpAh9gbl9T1/view?usp=sharing"
+            target="_blank"
+            onClick={() => {
+              setTimeout(() => {
+                window.location.href = "https://drive.google.com/uc?export=download&id=1mjTsav8nN4WUfsrndrxmKdpAh9gbl9T1";
+              }, 1000); // Delay to allow the file to load before initiating the download
+            }}
           >
-            <button id="resume-button-2" >
+            <button id="resume-button-2">
               Resume
             </button>
-          </Link>
+          </a>
+
         </div>
         <div className="introImg">
           <img className="home-img" src={myPic} alt="" />
@@ -77,6 +78,7 @@ const DIV = styled.div`
   }
 
   #resume-button-2{
+    cursor: pointer;
     background-color: black;
     color: #fff;
     padding: 1% 2%;
@@ -87,8 +89,8 @@ const DIV = styled.div`
     border-radius: 10px;
     box-shadow: 4px 5px 4px 3px #a3eb90;
     animation-name: button;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
   }
   @keyframes button {
   from {box-shadow: 4px 5px 4px 3px #a3eb90;background-color: #4c4f4b;}

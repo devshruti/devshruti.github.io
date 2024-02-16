@@ -1,4 +1,4 @@
-import {SiMongodb, SiReact, SiExpress, SiCanva, SiNpm, SiChakraui,  SiPostman, SiNetlify, SiReplit} from "react-icons/si"
+import {SiMongodb, SiReact, SiExpress, SiRender, SiNpm, SiChakraui,  SiPostman, SiNetlify, SiReplit} from "react-icons/si"
 import {TbBrandJavascript, TbBrandRedux, TbBrandSlack, TbBrandCodesandbox} from "react-icons/tb"
 import {DiNodejsSmall,DiVisualstudio, DiCss3, DiHtml5, DiGit} from "react-icons/di"
 import styled from "styled-components";
@@ -89,8 +89,8 @@ export const Skill = () => {
                <h2 style={{marginTop:"-10px", color:"#d0f3c6"}} >npm</h2>
           </div>
           <div className="tool1">
-            <SiCanva size={75}  color="#3dff08"/>
-               <h2 style={{marginTop:"-10px", color:"#d0f3c6"}} >Canva</h2>
+            <SiRender size={75}  color="#3dff08"/>
+               <h2 style={{marginTop:"-10px", color:"#d0f3c6"}} >Render</h2>
           </div>
         </div>
         </div>

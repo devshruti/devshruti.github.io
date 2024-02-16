@@ -62,23 +62,23 @@ const Navbar = () => {
               <AiOutlineContacts style={{ marginBottom: "-2px" }} /> Contact
             </a>
           </li>
-          <li
-            style={{ cursor: "pointer" }}
-            className="nav-link resume"
-            onClick={() => {
-              window.open(
-                "https://drive.google.com/file/d/1OvEn7SUFGb1epXVRuzKJpjfILJnfP_dA/view?usp=sharing",
-                "_blank"
-              );
-            }}
-          >
-            <Link
+          <li className="nav-link resume">
+            <a
               id="resume-link-1"
+              href="https://drive.google.com/file/d/1mjTsav8nN4WUfsrndrxmKdpAh9gbl9T1/view?usp=sharing"
               target="_blank"
-              download="Devshruti-Sen-Resume.pdf"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open(
+                  "https://drive.google.com/file/d/1mjTsav8nN4WUfsrndrxmKdpAh9gbl9T1/view?usp=sharing",
+                  "_blank"
+                );
+                setTimeout(() => {
+                  window.location.href = "https://drive.google.com/uc?export=download&id=1mjTsav8nN4WUfsrndrxmKdpAh9gbl9T1";
+                }, 1000); // Delay to allow the file to load before initiating the download
+              }}
             >
-              <button
-                id="resume-button-1" style={{ color: "#fff" }}>Resume
+              <button id="resume-button-1" style={{ color: "#fff" }}>Resume
                 <span>
                   <AiOutlineDownload
                     style={{ marginBottom: "-2px" }}
@@ -87,10 +87,10 @@ const Navbar = () => {
                   />
                 </span>
               </button>
-            </Link>
-
-
+            </a>
           </li>
+
+
         </ul>
         <div className="hamburger" onClick={handleClick}>
           {click ? <FaTimes size={20} /> : <FaBars size={20} />}
@@ -140,7 +140,7 @@ margin-bottom: 5%;
   } */
   #resume-button-1{
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 margin-bottom: 5%;
     font-weight: 500;
     background-color: black;
@@ -148,10 +148,10 @@ margin-bottom: 5%;
     width: 125px;
     height: 32px;
     border-radius: 5px;
-    
+    padding-bottom: 10px;
   }
   #resume-button-1:hover{
-   background-color: #87fc66;
+   background-color: #2bba00b3;
     /* color: #88ed6c; */
     /* font-size: 1.6rem; */
   }

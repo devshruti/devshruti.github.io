@@ -72,7 +72,7 @@ export const About = () => {
 
         </div>
         <div className="git-stats">
-          <img id="github-streak-stats" style={{ border: "2px solid #3dff08", borderRadius: "5px" }} src="https://github-readme-streak-stats.herokuapp.com?user=devshruti&theme=github-dark" />
+          <img id="github-streak-stats" style={{ border: "2px solid #3dff08", borderRadius: "5px" }} src="https://github-readme-streak-stats.herokuapp.com/?user=devshruti&theme=dark" />
           <img id="github-top-langs"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=devshruti&layout=compact&theme=blue-green" />
           <img id="github-stats-card" style={{ border: "3px solid #3dff08", borderRadius: "5px" }} src="https://github-readme-stats.vercel.app/api?username=devshruti&show_icons=true&theme=blue-green" />
         </div>
@@ -205,6 +205,22 @@ const DIV = styled.div`
   }
   83% {
     transform: rotateX(90deg);
+  }
+}
+@media screen and (max-width:940px){
+  .cubespinner div {
+  position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #94f65f;
+    background: rgba(139, 148, 136, 0.927);
+    text-align: center;
+    font-size: 100px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   }
 }
 
